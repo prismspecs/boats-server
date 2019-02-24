@@ -6,5 +6,10 @@ Facilitates communication to and from individual boats. The server runs on Node.
 
 # To run
 
-1. node server.js
-2. web browser -> 127.0.0.1:3000
+1. npm install
+2. node server.js
+3. web browser -> 127.0.0.1:3000
+
+Attach a servo to pin 8 on the Arduino, as outlined over at the [Boat repository](https://github.com/prismspecs/boat)
+
+The Boat (pi) should run the OpenFrameworks app to begin listening

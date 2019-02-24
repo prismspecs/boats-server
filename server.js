@@ -25,7 +25,7 @@ io.on('connection', function(client) {
   client.on('servo', function(data) {
     console.log(data);
     // make sure to update the boat IP
-    var client = new osc.Client('132.162.75.186', 12345);
+    var client = new osc.Client('132.162.106.141', 12345);
     // send data formatted as OSC integer
     client.send('/boat1/mast', parseInt(data), function() {
       client.kill();
