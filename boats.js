@@ -1,3 +1,5 @@
+// this is old code
+
 const http = require('http');
 
 var osc = require('node-osc');
@@ -12,7 +14,7 @@ var server = http.createServer(function(req,res) {
 });
 
 server.listen(3000, "127.0.0.1");
-console.log('Node server running on port 3000');  
+console.log('Node server running on port 3000');
 
 var client = new osc.Client('132.162.75.186', 12345);
 client.send('/boat1/mast', 180, function () {
@@ -20,7 +22,7 @@ client.send('/boat1/mast', 180, function () {
 });
 
 // // Create an instance of the http server to handle HTTP requests
-// let app = http.createServer((req, res) => {  
+// let app = http.createServer((req, res) => {
 //     // Set a response type of plain text for the response
 //     res.writeHead(200, {'Content-Type': 'text/plain'});
 
@@ -29,5 +31,5 @@ client.send('/boat1/mast', 180, function () {
 // });
 
 // // Start the server on port 3000
-// app.listen(3000, '127.0.0.1');  
-// console.log('Node server running on port 3000');  
+// app.listen(3000, '127.0.0.1');
+// console.log('Node server running on port 3000');
